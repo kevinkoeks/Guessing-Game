@@ -1,7 +1,5 @@
 # GuessingGame
-
-
-###Going over:
+Going over:
 
 ## C#, .NET, CLR
 
