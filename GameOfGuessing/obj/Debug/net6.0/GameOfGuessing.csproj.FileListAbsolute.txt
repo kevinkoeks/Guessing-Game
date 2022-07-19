@@ -1,0 +1,15 @@
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\bin\Debug\net6.0\GameOfGuessing.exe
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\bin\Debug\net6.0\GameOfGuessing.deps.json
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\bin\Debug\net6.0\GameOfGuessing.runtimeconfig.json
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\bin\Debug\net6.0\GameOfGuessing.dll
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\bin\Debug\net6.0\GameOfGuessing.pdb
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\GameOfGuessing.csproj.AssemblyReference.cache
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\GameOfGuessing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\GameOfGuessing.AssemblyInfoInputs.cache
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\GameOfGuessing.AssemblyInfo.cs
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\GameOfGuessing.csproj.CoreCompileInputs.cache
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\GameOfGuessing.dll
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\refint\GameOfGuessing.dll
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\GameOfGuessing.pdb
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\GameOfGuessing.genruntimeconfig.cache
+C:\Users\kevin\OneDrive\Desktop\Projects_old\CSharpDotNET\GuessingGame\GameOfGuessing\obj\Debug\net6.0\ref\GameOfGuessing.dll
