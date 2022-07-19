@@ -1,18 +1,18 @@
 # GuessingGame
 
 
-##Going over:
+###Going over:
 
-### C#, .NET, CLR
+## C#, .NET, CLR
 
-### Console project
+## Console project
 
-### Namespaces, classes, functions
+## Namespaces, classes, functions
 
-### Variables with types
+## Variables with types
 
-### Console text, colors & user input
+## Console text, colors & user input
 
-### If-statement & While-loops
+## If-statement & While-loops
 
-### And more
+## And more
