@@ -11,7 +11,7 @@ namespace NumGuess // Note: actual namespace depends on the project name.
             bool playGame = true;
             while (playGame) 
             {
-                //Changes all colors that come after it
+                
                 
 
                 Console.WriteLine("Please Insert your name: ");
@@ -45,35 +45,7 @@ namespace NumGuess // Note: actual namespace depends on the project name.
 
                 Console.WriteLine("Congratulation {0}! The correct number was indeed {1}.", playerName, playersAnswer);
 
-                Console.WriteLine("Do you want to play another guessing game?");
-                Console.WriteLine("Type N for NO or Y for Yes!");
-
-                while (true)
-                {
-                    string inputReceived = Console.ReadLine();  
-                    string userInput = inputReceived.ToUpper();
-                    if (userInput == "Y" || userInput == "N")
-                    {
-                        switch (userInput)
-                        {
-                            case "Y":
-                                playGame = true;
-                                Console.WriteLine("Let's start again! :)");
-                                break;
-                            case "N":
-                                Console.WriteLine("Goodbye! Hope to see you next time!");
-                                playGame = false;
-                                break;
-                        }
-                    } 
-                    else
-                    {
-                        Console.WriteLine("Sorry but {0} is not a valid input. Choose Y or N .Try again", inputReceived);
-                        continue;
-                    }
-
-                    break;
-                }
+                playGame = KeepPlaying();
             }
         }
 
@@ -83,10 +55,46 @@ namespace NumGuess // Note: actual namespace depends on the project name.
             string name = "Number  Guesser";
             String version = "1.0";
             string author = "Kevin";
-            
+
+            //Changes all colors that come after it
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Welcoome to the Game: {0} Version: {1} Made by: {2}", name, version, author);
             Console.ResetColor();
+        }
+
+        static bool KeepPlaying()
+        {
+            bool playerDecision = false;
+            Console.WriteLine("Do you want to play another guessing game?");
+            Console.WriteLine("Type N for NO or Y for Yes!");
+
+            while (true)
+            {
+                string inputReceived = Console.ReadLine();
+                string userInput = inputReceived.ToUpper();
+                if (userInput == "Y" || userInput == "N")
+                {
+                    switch (userInput)
+                    {
+                        case "Y":
+                            playerDecision = true;
+                            Console.WriteLine("Let's start again! :)");
+                            break;
+                        case "N":
+                            Console.WriteLine("Goodbye! Hope to see you next time!");
+                            playerDecision = false;
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Sorry but {0} is not a valid input. Choose Y or N .Try again", inputReceived);
+                    continue;
+                }
+
+                break;
+            }
+            return playerDecision;
         }
     }   
 }
