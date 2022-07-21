@@ -6,17 +6,13 @@ namespace NumGuess // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            string name = "Number  Guesser";
-            String version = "1.0";
-            string author = "Kevin";
-            bool playGame = true;
+            InfoOfApp();
 
+            bool playGame = true;
             while (playGame) 
             {
                 //Changes all colors that come after it
-                Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("Welcoome to the Game: {0} Version: {1} Made by: {2}", name, version, author);
-                Console.ResetColor();
+                
 
                 Console.WriteLine("Please Insert your name: ");
                 string playerName = Console.ReadLine();
@@ -49,21 +45,22 @@ namespace NumGuess // Note: actual namespace depends on the project name.
 
                 Console.WriteLine("Congratulation {0}! The correct number was indeed {1}.", playerName, playersAnswer);
 
-                Console.WriteLine("Do you want to play another guessong game?");
+                Console.WriteLine("Do you want to play another guessing game?");
                 Console.WriteLine("Type N for NO or Y for Yes!");
 
                 while (true)
                 {
-                    string userInput = Console.ReadLine();
-                    if (userInput == "Y" || userInput == "y" || userInput == "N" || userInput == "n")
+                    string inputReceived = Console.ReadLine();  
+                    string userInput = inputReceived.ToUpper();
+                    if (userInput == "Y" || userInput == "N")
                     {
                         switch (userInput)
                         {
-                            case "Y" or "y":
+                            case "Y":
                                 playGame = true;
                                 Console.WriteLine("Let's start again! :)");
                                 break;
-                            case "N" or "n":
+                            case "N":
                                 Console.WriteLine("Goodbye! Hope to see you next time!");
                                 playGame = false;
                                 break;
@@ -71,13 +68,25 @@ namespace NumGuess // Note: actual namespace depends on the project name.
                     } 
                     else
                     {
-                        Console.WriteLine("Sorry but {0} is not a valid input. Choose Y or N .Try again", userInput);
+                        Console.WriteLine("Sorry but {0} is not a valid input. Choose Y or N .Try again", inputReceived);
                         continue;
                     }
 
                     break;
                 }
             }
+        }
+
+
+        static void InfoOfApp()
+        {
+            string name = "Number  Guesser";
+            String version = "1.0";
+            string author = "Kevin";
+            
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Welcoome to the Game: {0} Version: {1} Made by: {2}", name, version, author);
+            Console.ResetColor();
         }
     }   
 }
