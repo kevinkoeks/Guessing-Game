@@ -4,6 +4,7 @@ namespace NumGuess // Note: actual namespace depends on the project name.
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             InfoOfApp();
@@ -11,40 +12,11 @@ namespace NumGuess // Note: actual namespace depends on the project name.
             bool playGame = true;
             while (playGame) 
             {
-                
-                
 
-                Console.WriteLine("Please Insert your name: ");
-                string playerName = Console.ReadLine();
-                Console.WriteLine("Hi welocme {0}, let start playing!", playerName);
+                PlayerInfo();
 
-                Random random = new Random();
-                int correctAnswer = random.Next(1, 10);
-                int playersAnswer = 0;
-                bool correctWinner = playersAnswer != correctAnswer;
-                Console.WriteLine("Give us your first guessnumber from 1 to 10: ");
-
-                while (correctWinner)
-                {
-                    string input = Console.ReadLine();  
-              
-                    if(!(int.TryParse(input, out playersAnswer))) 
-                    {
-                        Console.WriteLine("Sorry but {0} is not a number. Try again", input);
-                        continue;
-                    }
-
-                    playersAnswer = int.Parse(input);
-                    correctWinner = playersAnswer != correctAnswer;
-                    if (correctWinner)
-                    {
-                        Console.WriteLine("Sorry but {0} is not the correct answer. Try again", playersAnswer);
-                    }
-                
-                }
-
-                Console.WriteLine("Congratulation {0}! The correct number was indeed {1}.", playerName, playersAnswer);
-
+               
+         
                 playGame = KeepPlaying();
             }
         }
@@ -61,6 +33,45 @@ namespace NumGuess // Note: actual namespace depends on the project name.
             Console.WriteLine("Welcoome to the Game: {0} Version: {1} Made by: {2}", name, version, author);
             Console.ResetColor();
         }
+
+        static void PlayerInfo()
+        {
+            Console.WriteLine("Please Insert your name: ");
+            string playerName = Console.ReadLine();
+            Console.WriteLine("Hi welocme {0}, let start playing!", playerName);
+        }
+
+        static void GameLogic()
+        {
+            Random random = new Random();
+            int correctAnswer = random.Next(1, 10);
+            int playersAnswer = 0;
+            bool correctWinner = playersAnswer != correctAnswer;
+            Console.WriteLine("Give us your first guessnumber from 1 to 10: ");
+
+            while (correctWinner)
+            {
+                string input = Console.ReadLine();
+
+                if (!(int.TryParse(input, out playersAnswer)))
+                {
+                    Console.WriteLine("Sorry but {0} is not a number. Try again", input);
+                    continue;
+                }
+
+                playersAnswer = int.Parse(input);
+                correctWinner = playersAnswer != correctAnswer;
+                if (correctWinner)
+                {
+                    Console.WriteLine("Sorry but {0} is not the correct answer. Try again", playersAnswer);
+                }
+
+            }
+
+            Console.WriteLine("Congratulation {0}! The correct number was indeed {1}.", playerName, playersAnswer);
+
+        }
+
 
         static bool KeepPlaying()
         {
