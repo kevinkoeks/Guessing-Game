@@ -4,19 +4,15 @@ namespace NumGuess // Note: actual namespace depends on the project name.
 {
     class Program
     {
-        
         static void Main(string[] args)
         {
             InfoOfApp();
-
             bool playGame = true;
+            
             while (playGame) 
             {
-
-                PlayerInfo();
-
-               
-         
+                string name = PlayerInfo();
+                GameLogic(name);
                 playGame = KeepPlaying();
             }
         }
@@ -34,14 +30,17 @@ namespace NumGuess // Note: actual namespace depends on the project name.
             Console.ResetColor();
         }
 
-        static void PlayerInfo()
+        static string PlayerInfo()
         {
             Console.WriteLine("Please Insert your name: ");
             string playerName = Console.ReadLine();
+          
             Console.WriteLine("Hi welocme {0}, let start playing!", playerName);
+            return playerName;
         }
 
-        static void GameLogic()
+
+        static void GameLogic(string nameOfPlayer)
         {
             Random random = new Random();
             int correctAnswer = random.Next(1, 10);
@@ -68,7 +67,7 @@ namespace NumGuess // Note: actual namespace depends on the project name.
 
             }
 
-            Console.WriteLine("Congratulation {0}! The correct number was indeed {1}.", playerName, playersAnswer);
+            Console.WriteLine("Congratulation {0}! The correct number was indeed {1}.", nameOfPlayer, playersAnswer);
 
         }
 
