@@ -1,6 +1,7 @@
 # GuessingGame
 Going over:
 
+
 ## C#, .NET, CLR
 
 ## Console project
@@ -14,3 +15,6 @@ Going over:
 ## If-statement & While-loops
 
 ## And more
+
+To run the application: 
+After downloading the folder goto: GameOfGuessing > bin > Debug > net6.0 > GameOfGuessing (type application)
